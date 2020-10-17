@@ -1,5 +1,6 @@
 const apiRoutes = require('./routes/apiRoutes/animalRoutes');
 const htmlRoutes = require('./routes/htmlRoutes/index');
+const apiZookeeper = require('./routes/apiRoutes/zookeeperRoutes');
 
 const fs = require('fs');
 
@@ -23,6 +24,7 @@ const app = express();
 
   app.use('/api', apiRoutes);
   app.use('/', htmlRoutes);
+  app.use('/api', apiZookeeper);
 
 // function filterByQuery(query, animalsArray) {
 //     let personalityTraitsArray = [];

@@ -1,11 +1,13 @@
+
 const path = require('path');
 const router = require('express').Router();
+
 // const animalRoutes = require('../apiRoutes/animalRoutes');
 
 // router.use(animalRoutes);
 
 //router.use(require('http://localhost:3001/routes/apiRoutes/zookeeperRoutes'));
-router.use(require('../apiRoutes/zookeeperRoutes'));
+//router.use(require('../apiRoutes/zookeeperRoutes'));
 
 //router.use(require('./zookeeperRoutes'));
 
